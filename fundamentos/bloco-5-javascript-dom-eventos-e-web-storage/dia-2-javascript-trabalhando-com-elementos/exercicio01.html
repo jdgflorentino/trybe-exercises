@@ -76,6 +76,11 @@
         const elementSection = document.createElement('section');
         elementSection.className = 'center-content';
         elementMain.appendChild(elementSection);
+
+        // 4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+        const elementp = document.createElement('p');
+        elementp.innerText = 'Algum texto';
+        elementSection.appendChild(elementp);
     </script>
 
 
