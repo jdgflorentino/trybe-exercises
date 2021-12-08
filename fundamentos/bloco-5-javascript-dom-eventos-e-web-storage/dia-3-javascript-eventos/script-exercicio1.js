@@ -25,6 +25,7 @@ createDaysOfTheWeek();
 
 //Exercício 1
 //Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . Ex: <li class="day">3</li>
+//Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
 
 function createDaysOfTheMonth() {
     const dezDaysList = [
@@ -36,9 +37,29 @@ function createDaysOfTheMonth() {
     for (let i = 0; i < dezDaysList.length; i += 1) {
         let day = dezDaysList[i];
         const dayList = document.createElement("li");
-        dayList.className = "day";
-        dayList.innerHTML = day;
-        uldays.appendChild(dayList);
-    }
-}
+
+        if (day === 24 || day === 31) {
+            dayList.className = "day holiday";
+            dayList.innerHTML = day;
+            uldays.appendChild(dayList);
+        } else if (
+            day === 4 ||
+            day === 11 ||
+            day === 18
+        ) {
+            dayList.className = "day friday";
+            dayList.innerHTML = day;
+            uldays.appendChild(dayList);
+        } else if (day === 25) {
+            dayList.className = "day holiday friday";
+            dayList.innerHTML = day;
+            uldays.appendChild(dayList);
+
+        } else {
+            dayList.className = "day";
+            dayList.innerHTML = day;
+            uldays.appendChild(dayList);
+        }
+    };
+};
 createDaysOfTheMonth();
