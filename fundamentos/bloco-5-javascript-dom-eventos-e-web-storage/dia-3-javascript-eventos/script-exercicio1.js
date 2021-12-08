@@ -42,11 +42,7 @@ function createDaysOfTheMonth() {
             dayList.className = "day holiday";
             dayList.innerHTML = day;
             uldays.appendChild(dayList);
-        } else if (
-            day === 4 ||
-            day === 11 ||
-            day === 18
-        ) {
+        } else if (day === 4 || day === 11 || day === 18) {
             dayList.className = "day friday";
             dayList.innerHTML = day;
             uldays.appendChild(dayList);
@@ -54,14 +50,13 @@ function createDaysOfTheMonth() {
             dayList.className = "day holiday friday";
             dayList.innerHTML = day;
             uldays.appendChild(dayList);
-
         } else {
             dayList.className = "day";
             dayList.innerHTML = day;
             uldays.appendChild(dayList);
         }
-    };
-};
+    }
+}
 createDaysOfTheMonth();
 
 // Exercício 2
@@ -71,13 +66,31 @@ createDaysOfTheMonth();
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 
 function holidays(feriados) {
-
-    let button = document.createElement('button');
-    let elementDiv = document.querySelector('.buttons-container');
+    let button = document.createElement("button");
+    let elementDiv = document.querySelector(".buttons-container");
     button.innerHTML = feriados;
-    button.id = 'btn-holiday';
+    button.id = "btn-holiday";
     elementDiv.appendChild(button);
+}
 
-};
+holidays("Feriados");
 
-holidays('Feriados');
+// Exercício 3:
+// Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+function buttonClick() {
+    let buttonClick = document.querySelector("#btn-holiday");
+    let holidays = document.querySelectorAll(".holiday");
+
+    buttonClick.addEventListener("click", function() {
+        for (let i = 0; i < holidays.length; i += 1) {
+            if (holidays[i].style.backgroundColor === "white") {
+                holidays[i].style.backgroundColor = rgb(238, 238, 238);
+            } else {
+                holidays[i].style.backgroundColor = "white";
+            }
+        }
+    });
+}
+buttonClick();
