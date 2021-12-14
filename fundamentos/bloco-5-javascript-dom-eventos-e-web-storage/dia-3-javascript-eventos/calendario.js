@@ -85,36 +85,50 @@ function clickButton() {
 clickButton();
 
 function friday(buttonfriday) {
-
     let container = document.querySelector(".buttons-container");
     let btnfriday = document.createElement("button");
     btnfriday.id = "btn-friday";
     btnfriday.innerHTML = buttonfriday;
     container.appendChild(btnfriday);
-
-};
+}
 
 friday("Sexta-feira");
 
 function mudasexta(fridaysArray) {
-    let btnfriday = document.querySelector('#btn-friday');
-    let fridays = document.getElementsByClassName('friday');
-    let text = 'É sexta';
+    let btnfriday = document.querySelector("#btn-friday");
+    let fridays = document.getElementsByClassName("friday");
+    let text = "É sexta";
 
-    btnfriday.addEventListener('click', function() {
+    btnfriday.addEventListener("click", function() {
         for (let i = 0; i < fridays.length; i += 1) {
-
             if (fridays[i].innerHTML !== text) {
                 fridays[i].innerHTML = text;
             } else {
                 fridays[i].innerHTML = fridaysArray[i];
             }
-
-
-
         }
-    })
-};
+    });
+}
 
 let fridaysArray = [4, 11, 18, 25];
 mudasexta(fridaysArray);
+
+function zoomover() {
+    let daysList = document.querySelector("#days");
+
+    daysList.addEventListener("mouseover", function(event) {
+        event.target.style.fontSize = "30px";
+        event.target.style.fontWeight = "600";
+    });
+}
+
+function zoomout() {
+    let daysList = document.querySelector("#days");
+
+    daysList.addEventListener("mouseout", function(event) {
+        event.target.style.fontWeight = "200";
+        event.target.style.fontSize = "20px";
+    });
+}
+zoomover();
+zoomout();
