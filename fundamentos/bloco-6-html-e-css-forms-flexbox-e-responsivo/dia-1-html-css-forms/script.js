@@ -10,4 +10,39 @@ function createStateOptions() {
         states.appendChild(option);
     }
 }
-createStateOptions()
+
+function validateData() {
+
+    let inputName = document.querySelector('[name=name]');
+
+    if (inputName.value.length > 40 || inputName.value.length === 0) {
+        alert('Nome inválido!!');
+    }
+
+    let inputEmail = document.querySelector('[name=email]');
+
+    if (inputEmail.value.length > 50 || inputEmail.value.length === 0) {
+        alert('Email inválido!!');
+    }
+
+    let inputCPF = document.querySelector('[name=cpf]');
+
+    if (inputCPF.value.length > 11 || inputCPF.value.length === 0) {
+        alert('CPF inválido!!');
+    }
+
+
+}
+
+
+
+window.onload = function() {
+    createStateOptions()
+
+    let btnSubmit = document.querySelector('#btn-submit');
+    btnSubmit.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        validateData();
+    })
+}
