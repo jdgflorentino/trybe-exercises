@@ -19,7 +19,7 @@ var picker = new Pikaday({
     }
 });
 
-
+const validate = new window.JustValidate('#form');
 
 function createStateOptions() {
     let states = document.getElementById('state');
