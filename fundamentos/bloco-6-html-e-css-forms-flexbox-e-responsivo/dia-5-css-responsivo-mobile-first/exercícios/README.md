@@ -1,4 +1,4 @@
-#Parte I - Criar uma página para uma tela pequena
+# Parte I - Criar uma página para uma tela pequena
 
 Antes de começar, copie o template HTML e CSS abaixo, e salve em seus respectivos arquivos:
 
@@ -137,7 +137,7 @@ Agora você vai ajustar o *CSS* para melhorar a visualização da página.
 * Ajuste as margens da página;
 * Adicione a propriedade **max-width** à página, para garantir que a largura das linhas não fique muito grande.
 
-#Parte II - Criando 3 layouts diferentes utilizando o mobile first
+# Parte II - Criando 3 layouts diferentes utilizando o mobile first
 
 Antes de começar, copie o template *HTML* e *CSS* abaixo, e salve em seus respectivos arquivos:
 
@@ -393,7 +393,7 @@ html {
 * O que fazer com as informações do autor em cada tamanho de tela?
 3.  Talvez você precise alterar o *HTML* um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página.
 
-#Parte III - Criar layouts para dispositivos móveis e para impressão
+# Parte III - Criar layouts para dispositivos móveis e para impressão
 
 * exercise3.html
 
