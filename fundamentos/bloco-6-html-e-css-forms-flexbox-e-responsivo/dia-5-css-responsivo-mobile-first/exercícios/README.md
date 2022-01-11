@@ -513,8 +513,7 @@ html {
 
 ![**240x320: tela pequena**](exercise_3_before_small_phone-9f496c34f56185b7f2403f0e200cfec3.png)
 
-![**360x640 tela de smartphone**]
-(exercise_3_before_print-2d4180a7f515daebab4ee1c78fe51cfd.png)
+![**360x640 tela de smartphone**](exercise_3_before_print-2d4180a7f515daebab4ee1c78fe51cfd.png)
 
 
 
