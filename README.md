@@ -74,6 +74,20 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] 7.3: _Jest - Testes Assíncronos_
 - [x] 7.4: :green_circle: [Projeto - Carrinho de Compras](https://github.com/tryber/sd-019-c-project-shopping-cart/pull/63)
 
+##
+
+## Desenvolvimento Front-end :heavy_check_mark:
+
+##### Bloco 10: Introdução à React
+
+- [x] 10-1: _Introdução - Front-end_
+- [x] 10-1: _Introdução - React_
+- [x] 10.1: _'Hello, world!' no React!_
+- [ ] 10-2: _Componentes React_
+- [ ] 10-3: 🔴 [Projeto - Sistema Solar]
+
+
+
 
 
 
